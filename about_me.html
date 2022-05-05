@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About the Creator</title>
+<link rel="stylesheet" href="final.css"></link>
+</head>
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+<body>
+    <h1>About the Creator</h1>
+    <div id="myDiv">
+        <p> My name is Jake Smith and I am the creator of this program. The purpose of this is for my final project in one of my Information Technology classes at the University of Missouri. I am currently learning Python, JavaScript, and HTML and play volleyball at the University. </p>
+        <p> Here is a photo of me and my highschool teammates celebrating our regional semifinal win: </p>
+        <img src="IMG_1221.JPG" alt="Celebration" width="1250" height="900">
+        <p> Here is a table showing what Information Technology classes I am taking in the Fall 2022 semester: </p>
+        <table>
+            <tr>
+                <th> Class Number </th>
+                <th> Class Name </th>
+                <th> Instructor </th>
+            </tr>
+            <tr>
+                <td> INFOTC 1600 </td>
+                <td> Digital Systems </td>
+                <td> D. Musser </td>
+            </tr>
+            <tr>
+                <td> INFOTC 1610</td>
+                <td> Intro to Digital Media Design </td>
+                <td> C. Gubera</td>
+            </tr>
+            <tr>
+                <td> INFOTC 2040 </td>
+                <td> Programming Languages and Paradigms </td>
+                <td> K. Culmer </td>
+            </tr>
+            <tr>
+                <td> INFOTC 2810 </td>
+                <td> Fundamentals of Network Technology </td>
+                <td> F. Wang </td>
+            </tr>
+        </table>
+        <p> In my INFOTC 1040 class, one of my favorite projects was using Python Turtle Graphics to make something interesting. Here is how I coded it and what the outcome looks like: </p>
+        <pre>
+            <code>
+                import random
+                import turtle
+                from turtle import Turtle
+
+                turtle.bgcolor("black")
+
+                class CoolTurtle(Turtle):
+                    def awesome_spiro(self, num_circle):
+                        colors = ["red","yellow","blue","white","cyan","pink","lime","magenta"]
+                        for i in range(num_circle):
+                            color = random.choice(colors)
+                            self.color(color)
+                            self.circle(100)
+                            self.left(10)
+
+                epic_turtle = CoolTurtle()
+                epic_turtle.awesome_spiro(40)
+
+                input() # so the image stays
+            </code>
+        </pre>
+        <img src="turtle_result.png" alt="Turtle Result">
+        <p> To go learn about a position, select one below: </p>
+        <p> <a href="outside_opposite.html">Outside and Opposite Hitter</a> </p>
+        <p> <a href="middle.html">Middle</a> </p>
+        <p> <a href="libero.html">Libero</a> </p>
+        <p> <a href="setter.html">Setter</a> </p>
+        <p style="color:lightskyblue"> Or, go back to the <a href="index.html"> home page</a>.</p>
+    </div>
+</body>
+</html>
